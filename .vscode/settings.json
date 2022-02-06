@@ -1,0 +1,5 @@
+{
+  "AllAutocomplete.showCurrentDocument": true,
+  "typescript.suggest.paths": false,
+  "javascript.suggest.paths": false
+}
