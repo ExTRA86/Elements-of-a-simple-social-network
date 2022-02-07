@@ -14,4 +14,4 @@ Login
 
 Основано на обучающем проекте UlbiTV
 
-Stack React (useState, useEffect, useMemo, useContext, observer), react-router-dom, rest API
+Stack React (useState, useEffect, useMemo, useContext, observer), react-router-dom
