@@ -16,7 +16,7 @@ function Friends() {
   });
 
   const [totalPages, setTotalPages] = useState(0);
-  const [limit, setLimit] = useState(10);
+  const [limit] = useState(10);
   const [page, setPage] = useState(1);
   const sortedAndSearchedFriends = useFriends(
     friends,
@@ -40,6 +40,7 @@ function Friends() {
 
   useEffect(() => {
     fetchFriends(limit, page);
+    // eslint-disable-next-line
   }, [page, limit]);
 
   function removeFriend(friend) {
