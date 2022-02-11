@@ -13,12 +13,12 @@ const FriendsIdPage = () => {
   const [hide, setHide] = useState(true);
   const [modal, setModal] = useState(false);
 
-  const [fetchFriendByID, isLoading, error] = useFetching(async id => {
+  const [fetchFriendByID] = useFetching(async id => {
     const response = await FriendsService.getById(id);
     setFriend(response.data);
   });
 
-  const [fetchAvatarPicture, isComLoading, comError] = useFetching(async id => {
+  const [fetchAvatarPicture] = useFetching(async id => {
     const response = await FriendsService.getPictureByFriendId(id);
     setAvatarPicture(response.data);
   });
@@ -26,6 +26,7 @@ const FriendsIdPage = () => {
   useEffect(() => {
     fetchAvatarPicture(params.id);
     fetchFriendByID(params.id);
+    // eslint-disable-next-line
   }, []);
 
   return (

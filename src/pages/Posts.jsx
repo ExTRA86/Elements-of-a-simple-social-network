@@ -41,6 +41,7 @@ function Posts() {
 
   useEffect(() => {
     fetchPosts(limit, page);
+    // eslint-disable-next-line
   }, [page, limit]);
 
   function createPost(newPost) {

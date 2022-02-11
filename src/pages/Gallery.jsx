@@ -37,6 +37,7 @@ function Gallery() {
 
   useEffect(() => {
     fetchPics(limit, page);
+    // eslint-disable-next-line
   }, [limit]);
 
   function createPic(newPic) {

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import FriendsService from '../../API/FriendsService';
 import { useFetching } from '../../hooks/useFetching';
@@ -12,13 +12,14 @@ export default function FriendsItem(props) {
     router('/friends/' + props.friend.id);
   };
 
-  const [fetchAvatarPicture, isComLoading, comError] = useFetching(async id => {
+  const [fetchAvatarPicture] = useFetching(async id => {
     const response = await FriendsService.getPictureByFriendId(id);
     setAvatarPicture(response.data);
   });
 
   useEffect(() => {
     fetchAvatarPicture(props.friend.id);
+    // eslint-disable-next-line
   }, []);
 
   return (

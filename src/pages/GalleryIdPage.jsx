@@ -10,15 +10,16 @@ const GalleryIdPage = () => {
   console.log(picture);
 
   const params = useParams();
-  const [pic, setPic] = useState({});
+  const [setPic] = useState({});
 
-  const [fetchPicByID, isLoading, error] = useFetching(async id => {
+  const [fetchPicByID, isLoading] = useFetching(async id => {
     const response = await GalleryService.getById(id);
     setPic(response.data);
   });
 
   useEffect(() => {
     fetchPicByID(params.id);
+    // eslint-disable-next-line
   }, []);
 
   return (
