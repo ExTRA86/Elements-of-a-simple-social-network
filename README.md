@@ -15,6 +15,7 @@ Login
 Основано на обучающем проекте UlbiTV
 
 Stack React (useState, useEffect, useMemo, useContext, observer), react-router-dom
+________________________________________________________________________________________________________
 
 Simple social network
 
