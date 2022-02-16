@@ -14,6 +14,8 @@ Login
 
 Основано на обучающем проекте UlbiTV
 
+В дальнейших обновлениях будет реализована мобильная версия сайта.
+
 Stack React (useState, useEffect, useMemo, useContext, observer), react-router-dom
 ________________________________________________________________________________________________________
 
@@ -30,6 +32,8 @@ Posts (add, delete, view with comments, search, sort, infinite scroll)
 Gallery (adding by url, deleting, preview, detailed view, search, sorting, adaptive pagination)
 
 User profile and friends (view friend profile, delete, search, sort, infinite scroll)
+
+In future updates, a mobile version of the site will be implemented.
 
 
 ## Available Scripts
